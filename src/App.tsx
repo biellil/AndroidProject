@@ -1,8 +1,11 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-
-
+import Home from './pages/Home';
+import { DefaultLayout } from './layout/Default'
+import { Home } from './pages/Home'
+import { CompleteOrderPage } from './pages/CompleteOrder'
+import { OrderConfirmedPage } from './pages/OrderConfirmed'
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -25,7 +28,17 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => (
-<>helo word</>
+  <IonApp>
+    <IonReactRouter>
+      <IonRouterOutlet>
+      <Route path="/" element={<DefaultLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/completeOrder" element={<CompleteOrderPage />} />
+        <Route path="/orderConfirmed" element={<OrderConfirmedPage />} />
+      </Route>
+      </IonRouterOutlet>
+    </IonReactRouter>
+  </IonApp>
 );
 
 export default App;
