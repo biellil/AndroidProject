@@ -1,44 +1,20 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
-import { DefaultLayout } from './layout/Default'
-import { Home } from './pages/Home'
-import { CompleteOrderPage } from './pages/CompleteOrder'
-import { OrderConfirmedPage } from './pages/OrderConfirmed'
-/* Core CSS required for Ionic components to work properly */
-import '@ionic/react/css/core.css';
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import { CartContextProvider } from './contexts/CartContext'
+import { Router } from './Router'
+import { GlobalStyle } from './styles/global'
+import { defaultTheme } from './styles/themes/default'
 
-/* Basic CSS for apps built with Ionic */
-import '@ionic/react/css/normalize.css';
-import '@ionic/react/css/structure.css';
-import '@ionic/react/css/typography.css';
+export function App() {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
 
-/* Optional CSS utils that can be commented out */
-import '@ionic/react/css/padding.css';
-import '@ionic/react/css/float-elements.css';
-import '@ionic/react/css/text-alignment.css';
-import '@ionic/react/css/text-transformation.css';
-import '@ionic/react/css/flex-utils.css';
-import '@ionic/react/css/display.css';
-
-/* Theme variables */
-import './theme/variables.css';
-
-setupIonicReact();
-
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-      <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/completeOrder" element={<CompleteOrderPage />} />
-        <Route path="/orderConfirmed" element={<OrderConfirmedPage />} />
-      </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
-
-export default App;
+      <BrowserRouter>
+        <CartContextProvider>
+          <Router />
+        </CartContextProvider>
+      </BrowserRouter>
+    </ThemeProvider>
+  )
+}
