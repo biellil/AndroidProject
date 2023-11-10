@@ -8,9 +8,8 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   position: sticky;
-  top: 0;
-  left: 0;
   z-index: 5;
+  margin-bottom: 1rem;
 
   > div {
     width: 100%;
