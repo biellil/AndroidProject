@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 import { Header } from '../../components/Header'
 import { LayoutContainer } from './styles'
 
-function DefaultLayout() {
+export function DefaultLayout() {
   return (
     <LayoutContainer>
       <Header />
@@ -11,4 +11,3 @@ function DefaultLayout() {
     </LayoutContainer>
   )
 }
-export default DefaultLayout;

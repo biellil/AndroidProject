@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.biellil.meuapp',
-  appName: 'CoffeeDelivery',
-  webDir: 'build',
+  appId: 'io.ionic.starter',
+  appName: 'CoffeeDeliver',
+  webDir: 'dist',
   server: {
     androidScheme: 'https'
   }
