@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
 
 export const HeaderContainer = styled.header`
+  background: ${({ theme }) => theme.colors['base-background']};
   width: 100%;
   height: 6.5rem;
-  background: ${({ theme }) => theme.colors['base-background']};
   display: flex;
   align-items: center;
   justify-content: center;
