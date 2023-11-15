@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   position: fixed;
   z-index: 5;
-  margin-bottom: 1rem;
+  
 
   > div {
     width: 100%;

@@ -15,7 +15,7 @@ export const HeroContainer = styled.section`
 `
 
 export const HeroContent = styled.div`
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
