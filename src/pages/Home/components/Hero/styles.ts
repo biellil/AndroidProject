@@ -4,6 +4,7 @@ import heroBackgroundImage from '../../../../assets/hero-background.png'
 import { TitleText } from '../../../../components/Typography'
 
 export const HeroContainer = styled.section`
+  margin-top: 2rem;
   width: 100%;
   height: 34rem;
   background: ${() => `url(${heroBackgroundImage})`} no-repeat center;
