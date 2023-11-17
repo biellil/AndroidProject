@@ -6,7 +6,7 @@ export const OrderConfirmedContainer = styled.div`
   gap: 2.5rem;
   
  > div{
-  margin-top: 6rem;
+  margin-top: 7rem;
  }
   h1 {
     color: ${({ theme }) => theme.colors['brand-yellow-dark']};
