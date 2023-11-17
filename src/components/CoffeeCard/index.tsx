@@ -8,7 +8,7 @@ import {
   CardFooter,
   AddCartWrapper,
 } from './styles'
-import { Coffee} from 'phosphor-react'
+import { Coffee } from 'phosphor-react'
 import { useCart } from '../../hooks/useCart'
 import { useState } from 'react'
 

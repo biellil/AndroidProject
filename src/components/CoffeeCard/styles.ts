@@ -46,6 +46,7 @@ export const Name = styled(TitleText).attrs({
   color: 'subtitle',
   weight: '700',
 })`
+
   margin-bottom: 0.5rem;
 `
 
@@ -53,6 +54,7 @@ export const Description = styled(RegularText).attrs({
   size: 's',
   color: 'label',
 })`
+font-family: 'Montserrat', sans-serif;
   margin-bottom: 2rem;
 `
 

@@ -44,6 +44,7 @@ export const HeroContent = styled.div`
 `
 
 export const HeroTitle = styled(TitleText)`
+
   margin-bottom: 1rem;
 `
 
