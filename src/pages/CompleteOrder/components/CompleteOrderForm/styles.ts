@@ -2,8 +2,10 @@ import styled from 'styled-components'
 import { SectionBaseStyle } from '../../styles'
 
 export const CompleteOrderFormContainer = styled.div`
+margin-top: 7rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
   width: 100%;
 `
