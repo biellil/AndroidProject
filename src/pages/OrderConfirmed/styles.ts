@@ -4,17 +4,20 @@ export const OrderConfirmedContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  margin-top: 5rem;
-
+  
+ > div{
+  margin-top: 6rem;
+ }
   h1 {
     color: ${({ theme }) => theme.colors['brand-yellow-dark']};
   }
 
   > section {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 0.5rem;
 
     > img {
       width: 100%;
@@ -27,6 +30,7 @@ export const OrderConfirmedContainer = styled.div`
 `
 
 export const OrderDetailsContainer = styled.div`
+
   padding: 2.5rem;
   border-radius: 6px 36px 6px 36px;
   background: ${({ theme }) => theme.colors['base-background']};
