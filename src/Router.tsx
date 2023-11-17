@@ -3,7 +3,7 @@ import { DefaultLayout } from './layout/Default';
 import { Home } from './pages/Home';
 import { CompleteOrderPage } from './pages/CompleteOrder';
 import { OrderConfirmedPage } from './pages/OrderConfirmed';
-import './routsStyles.scss';
+
 
 export function Router() {
   return (

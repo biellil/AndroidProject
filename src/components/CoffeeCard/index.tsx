@@ -8,7 +8,7 @@ import {
   CardFooter,
   AddCartWrapper,
 } from './styles'
-import { ShoppingCart } from 'phosphor-react'
+import { ShoppingBag} from 'phosphor-react'
 import { useCart } from '../../hooks/useCart'
 import { useState } from 'react'
 
@@ -81,7 +81,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
             quantity={quantity}
           />
           <button onClick={handleAddToCart}>
-            <ShoppingCart weight="fill" size={22} />
+            <ShoppingBag weight="fill" size={22} />
           </button>
         </AddCartWrapper>
       </CardFooter>
